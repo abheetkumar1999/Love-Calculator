@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <style>
+        body{
+            background-image: url('love-3061483_1920.jpg');
+            background-size: 'cover';
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .card-header,.card-footer{
+            text-align: center;
+        }
+        .form-inline{
+            width: 75;
+            margin: auto;
+        }
+        .form-control{
+            text-align: center;
+        }
+        .card-header{
+            background-color:red;
+            color: white;
+        }
+        .forbutton,.result{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-inline{
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header{
+            width: 100%;
+          position: absolute;
+          top: 50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+        }
+        .result{
+            text-align: center;
+        }
+
+    </style>
+    <title>LOVE CALCULATOR</title>
+</head>
+<body id="screen">
+    <header>
+        <div class="card w-50 m-auto">
+            <div class="card-header">LOVE CALCULATOR</div>
+            <div class="card-body">
+                <form class="form-inline w-75 m-auto">
+                    <div class = "form-group">
+                        <input type="text" name="" id="fname" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div><span class="pl-4 pr-4"> + </span></div>
+                    <div class = "form-group ">
+                        <input type="text" name="" id="lname" class="form-control" placeholder="Love Name">
+                    </div>   
+                </form>
+                <br>
+                <div class="forbutton w-75 m-auto ">
+                    <button type="button" class="btn btn-success w-50" onclick="lovecalc()">Check</button>
+                </div>
+                <br>
+                <div class="result" >
+                    <input type="text" name="" class="result" id="res" placeholder="Your Love Status!" >
+                </div>
+            </div>
+            <div class="card-footer">GOD BLESS YOUR RELATIONSHIP!</div>
+          </div>
+    </header>
+    
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <script type='text/javascript'>//<![CDATA[
+        function iecompattest()
+        {
+            return document.compatMode&&document.compatMode!="BackCompat"?document.documentElement:document.body
+        }
+            function snowIE_NS6()
+            {
+                doc_width=ns6up?window.innerWidth-10:iecompattest().clientWidth-10;
+                doc_height=window.innerHeight&&snowdistance=="windowheight"?window.innerHeight:ie4up&&snowdistance=="windowheight"?iecompattest().clientHeight:ie4up&&!window.opera&&snowdistance=="pageheight"?iecompattest().scrollHeight:iecompattest().offsetHeight;
+                for(i=0;i<no;++i)
+                {
+                    yp[i]+=sty[i];
+                    if(yp[i]>doc_height-50)
+                    {
+                        xp[i]=Math.random()*(doc_width-am[i]-30);
+                        yp[i]=0;stx[i]=.02+Math.random()/10;
+                        sty[i]=.7+Math.random()
+                    }
+                    dx[i]+=stx[i];document.getElementById("dot"+i).style.top=yp[i]+"px";
+                    document.getElementById("dot"+i).style.left=xp[i]+am[i]*Math.sin(dx[i])+"px"}snowtimer=setTimeout("snowIE_NS6()",10)}function hidesnow(){if(window.snowtimer)clearTimeout(snowtimer);
+                        for(i=0;i<no;i++)document.getElementById("dot"+i).style.visibility="hidden"}var snowsrc="http://i.imgur.com/JIgmsH2.png";var no=15;var hidesnowtime=0;var snowdistance="pageheight";var ie4up=document.all?1:0;var ns6up=document.getElementById&&!document.all?1:0;var dx,xp,yp;var am,stx,sty;var i,doc_width=800,doc_height=600;if(ns6up){doc_width=self.innerWidth;doc_height=self.innerHeight}else if(ie4up){doc_width=iecompattest().clientWidth;doc_height=iecompattest().clientHeight}dx=new Array;xp=new Array;yp=new Array;am=new Array;stx=new Array;sty=new Array;snowsrc=snowsrc.indexOf("hackinguniversity.in")!=-1?"http://i.imgur.com/JIgmsH2.png":snowsrc;for(i=0;i<no;++i){dx[i]=0;xp[i]=Math.random()*(doc_width-50);yp[i]=Math.random()*doc_height;am[i]=Math.random()*20;stx[i]=.02+Math.random()/10;sty[i]=.7+Math.random();if(ie4up||ns6up){if(i==0){document.write('<div id="dot'+i+'" style="POSITION: absolute;Z-INDEX: '+i+';VISIBILITY: visible;TOP: 15px;LEFT: 15px;"><a href="http://hackinguniversity.in"><img src=\''+snowsrc+'\' border="0"></a></div>')}else{document.write('<div id="dot'+i+'" style="POSITION: absolute;Z-INDEX: '+i+";VISIBILITY: visible;TOP: 15px;LEFT: 15px;\"><img src='"+snowsrc+'\' border="0"></div>')}}}if(ie4up||ns6up){snowIE_NS6();if(hidesnowtime>0)setTimeout("hidesnow()",hidesnowtime*1e3)}//]]>
+        </script>
+
+</body>
+</html>
